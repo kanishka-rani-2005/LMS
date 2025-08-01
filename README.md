@@ -96,8 +96,9 @@ python manage.py runserver
 
 
 ## 🎬 Demo
-#### 📁 Check the demo video here: video/Demo.mp4
 
+Watch the demo video here:  
+[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
 
 
 #### 🙋‍♂️ Author
