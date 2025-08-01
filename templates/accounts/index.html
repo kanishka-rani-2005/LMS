@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome - Bookstore</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #e9f1ff;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      color: #333;
+    }
+    .nav {
+      margin-top: 30px;
+    }
+    .nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #4285f4;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome, {{ request.user.username }}!</h1>
+
+  <div class="nav">
+    <a href="{% url 'available_books' %}">Borrow Books</a>
+    <a href="{% url 'all_books' %}">Inventory</a>
+    <a href="{% url 'my_borrowed_books' %}">My Books</a>
+    <a href="{% url 'returned_books' %}">Returned Books</a>
+    <a href="{% url 'login' %}">Logout</a>
+  </div>
+</body>
+</html>
+
+
+
