@@ -76,7 +76,7 @@
     </style>
 </head>
 <body>
-
+{% load custom_filters %}
     <h2>All Books in Inventory</h2>
 
     <table>
@@ -98,7 +98,7 @@
                     <td>{{ book.code }}</td>
                     <td>{{ book.title }}</td>
                     <td>{{ book.author}}</td>
-                    <td>{{ book.edition }}</td>
+                    <td>{{ book.edition | change_edition}}</td>
                     <td>{{ book.publisher }}</td>
                     <td>{{ book.category.name }}</td>
 
